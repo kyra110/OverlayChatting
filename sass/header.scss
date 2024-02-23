@@ -1,0 +1,70 @@
+header {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  margin-top: 10px;
+  width: 60%;
+  position: relative;
+  img {
+    top: 0px;
+    left: 0px;
+    height: 80px;
+    width: 80px;
+    margin-left: 20px;
+    position: absolute;
+    z-index: -1;
+  }
+  h1 {
+    font-size: 6rem;
+    margin-left: 150px;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    .kyra {
+      text-shadow: 3px 3px 3px #d27d73;
+    }
+    .coding {
+      color: #7451eb;
+      text-shadow: 3px 3px 3px #d27d73;
+    }
+  }
+  .fa-user-check {
+    font-size: 2rem;
+    margin-left: 20px;
+    color: #d27d73;
+    transition-property: transform;
+    transition-duration: 0.5s;
+  }
+  // Animation pour le Titre
+  .animated {
+    animation: playAnimation 1s;
+  }
+
+  @keyframes playAnimation {
+    0% {
+      transform: scale(1) translateX(0);
+    }
+    50% {
+      transform: scale(1.2) translateX(50px);
+    }
+    100% {
+      transform: scale(1) translateX(0);
+    }
+  }
+
+  // Animation pour l'icone
+  .animated2 {
+    animation: playAnimation2 1s;
+  }
+
+  @keyframes playAnimation2 {
+    0% {
+      transform: scale(1) translateX(0);
+    }
+    50% {
+      transform: scale(1.2) translateX(90px);
+    }
+    100% {
+      transform: scale(1) translateX(0);
+    }
+  }
+}

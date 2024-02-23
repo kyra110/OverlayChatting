@@ -1,0 +1,80 @@
+.containerPrincipal {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  height: 950px;
+  .containerEcranInfos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    .Ecran {
+      width: 99%;
+      height: 80%;
+      border-radius: 25px;
+      border: 3px solid purple;
+      background-color: yellowgreen;
+    }
+    .containerInfos {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 99%;
+      height: 15%;
+      .follows {
+        width: 400px;
+        height: 100px;
+        background-color: yellowgreen;
+        border: 3px solid purple;
+        border-radius: 25px;
+      }
+      .subs {
+        width: 400px;
+        height: 100px;
+        background-color: yellowgreen;
+        border: 3px solid purple;
+        border-radius: 25px;
+      }
+      .tips {
+        width: 400px;
+        height: 100px;
+        background-color: yellowgreen;
+        border: 3px solid purple;
+        border-radius: 25px;
+      }
+    }
+  }
+  .chat {
+    width: 28%;
+    height: 97%;
+    background-color: yellowgreen;
+    border-radius: 25px;
+    border: 3px solid purple;
+    position: relative;
+    .logoReact{
+      position: absolute;
+      bottom: -10px;
+      right: -10px;
+    }
+      // Animation pour l'icone react du chat
+  .animLogoReact {
+    animation: playAnimation3 2s;
+  }
+
+  @keyframes playAnimation3 {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  }
+}

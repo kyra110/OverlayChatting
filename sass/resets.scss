@@ -1,0 +1,18 @@
+@font-face {
+  font-family: pacifico;
+  src:url("./assets/fonts/Pacifico-Regular.ttf") ;
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family:pacifico ;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1920px;
+  height: 100vh;
+  background: linear-gradient(#cdffd8, #94b9ff);
+  overflow: hidden;
+}

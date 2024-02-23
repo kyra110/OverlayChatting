@@ -1,0 +1,166 @@
+header {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  margin-top: 10px;
+  width: 60%;
+  position: relative;
+}
+header img {
+  top: 0px;
+  left: 0px;
+  height: 80px;
+  width: 80px;
+  margin-left: 20px;
+  position: absolute;
+  z-index: -1;
+}
+header h1 {
+  font-size: 6rem;
+  margin-left: 150px;
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+header h1 .kyra {
+  text-shadow: 3px 3px 3px #d27d73;
+}
+header h1 .coding {
+  color: #7451eb;
+  text-shadow: 3px 3px 3px #d27d73;
+}
+header .fa-user-check {
+  font-size: 2rem;
+  margin-left: 20px;
+  color: #d27d73;
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+header .animated {
+  animation: playAnimation 1s;
+}
+@keyframes playAnimation {
+  0% {
+    transform: scale(1) translateX(0);
+  }
+  50% {
+    transform: scale(1.2) translateX(50px);
+  }
+  100% {
+    transform: scale(1) translateX(0);
+  }
+}
+header .animated2 {
+  animation: playAnimation2 1s;
+}
+@keyframes playAnimation2 {
+  0% {
+    transform: scale(1) translateX(0);
+  }
+  50% {
+    transform: scale(1.2) translateX(90px);
+  }
+  100% {
+    transform: scale(1) translateX(0);
+  }
+}
+
+@font-face {
+  font-family: pacifico;
+  src: url("/assets/fonts/Pacifico-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: pacifico;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1920px;
+  height: 100vh;
+  background: linear-gradient(#cdffd8, #94b9ff);
+  overflow: hidden;
+}
+
+.containerPrincipal {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  height: 950px;
+}
+.containerPrincipal .containerEcranInfos {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+}
+.containerPrincipal .containerEcranInfos .Ecran {
+  width: 99%;
+  height: 80%;
+  border-radius: 25px;
+  border: 3px solid purple;
+  background-color: yellowgreen;
+}
+.containerPrincipal .containerEcranInfos .containerInfos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 99%;
+  height: 15%;
+}
+.containerPrincipal .containerEcranInfos .containerInfos .follows {
+  width: 400px;
+  height: 100px;
+  background-color: yellowgreen;
+  border: 3px solid purple;
+  border-radius: 25px;
+}
+.containerPrincipal .containerEcranInfos .containerInfos .subs {
+  width: 400px;
+  height: 100px;
+  background-color: yellowgreen;
+  border: 3px solid purple;
+  border-radius: 25px;
+}
+.containerPrincipal .containerEcranInfos .containerInfos .tips {
+  width: 400px;
+  height: 100px;
+  background-color: yellowgreen;
+  border: 3px solid purple;
+  border-radius: 25px;
+}
+.containerPrincipal .chat {
+  width: 28%;
+  height: 97%;
+  background-color: yellowgreen;
+  border-radius: 25px;
+  border: 3px solid purple;
+  position: relative;
+}
+.containerPrincipal .chat .logoReact {
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+}
+.containerPrincipal .chat .animLogoReact {
+  animation: playAnimation3 2s;
+}
+@keyframes playAnimation3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
