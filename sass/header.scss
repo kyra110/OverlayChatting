@@ -5,7 +5,7 @@ header {
   margin-top: 10px;
   width: 60%;
   position: relative;
-  img {
+  .logoOC {
     top: 0px;
     left: 0px;
     height: 80px;
@@ -13,6 +13,13 @@ header {
     margin-left: 20px;
     position: absolute;
     z-index: -1;
+  }
+  #userIcon{
+    position: absolute;
+    right: 368px;
+    top: 13px;
+    height: 80px;
+    width: 80px;
   }
   h1 {
     font-size: 6rem;
